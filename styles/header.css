@@ -1,0 +1,28 @@
+#primary{
+    /* padding block diz respeito ao eixo vertical, em cima e em baixo */
+    padding-block: 20px;
+
+    div{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    /* nesting css */
+    div:nth-child(2){
+        /* inline diz respeito ao eixo horizontal, esquerda e direita */
+        margin-inline: auto;
+    }
+
+    div:nth-child(3){
+        justify-self: end;
+    }
+}
+
+#secondary{
+    padding-block: 14px;
+    border: solid 1px var(--stroke-color);
+    border-inline: none;
+
+    justify-content: space-between;
+}
